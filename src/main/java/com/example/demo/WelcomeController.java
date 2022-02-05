@@ -1,16 +1,15 @@
 package com.example.demo;
 
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class WelcomeController {
 	
-	@RequestMapping(value="/welcome")
+	@RequestMapping(value="/home")
 	public static String welcome() {
-		
-	  return "welcome to Social Api";
+		return "index";
 	}
 
 }
