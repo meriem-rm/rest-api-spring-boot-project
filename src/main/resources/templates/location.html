@@ -12,7 +12,13 @@
     <a th:href="@{location}" > location</a>
     <a th:href="@{posts}" > posts</a>
     <a th:href="@{users}" > users</a>
-  </div>
+  </div> 
+  
+  <ul>
+    <li th:each="location : ${locations}">
+        <span th:text="${location.name}">Default</span>
+    </li>
+</ul>
 
 </body>
 </html>
